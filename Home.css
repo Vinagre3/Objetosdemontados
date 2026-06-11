@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#16223f;
+    font-family:Arial, sans-serif;
+    color:white;
+    min-height:100vh;
+}
+
+
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.menu button{
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#141c28;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.menu button:hover{
+    background:#3b82f6;
+    transform:scale(1.08);
+}
+
+
+.categoria{
+    display:none;
+    padding:40px;
+}
+
+.categoria.ativa{
+    display:block;
+}
+
+
+.cartoes{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.cartao{
+    height:220px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.cartao:hover{
+    transform:translateY(-10px);
+}
+
+
+.cartao1{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina1.jpeg");
+}
+
+.cartao2{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina2.jpeg");
+}
+
+.cartao3{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina3.jpeg");
+}
+
+.cartao4{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina4.jpg");
+}
+
+.cartao5{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Brinc1.jpeg");
+}
+
+.cartao6{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Brinc2.jpeg");
+}
+
+.cartao7{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Brinc3.jpg");
+}
+
+.cartao8{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina1.jpeg");
+}
+
+.cartao9{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina1.jpeg");
+}
+
+.cartao10{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina1.jpeg");
+}
+
+.cartao11{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina1.jpeg");
+}
+
+.cartao12{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Maquina1.jpeg");
+}
+
+.cartao13{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/teclado.jpg");
+}
+
+.cartao14{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Comaps4.jpeg");
+}
+
+.cartao15{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Rato.jpg");
+}
+
+.cartao16{
+    background-image:
+    linear-gradient(
+    rgba(15,23,42,0.55),
+    rgba(30,41,59,0.55)),
+    url("img/Fones.jpeg");
+}
+
+
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+}
+
+.modal-content{
+    width:85%;
+    height:85%;
+    background:#111827;
+    border-radius:25px;
+    padding:30px;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.fechar{
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+#tituloProduto{
+    margin-bottom:20px;
+}
+
+
+.grande-cartao{
+    display:none;
+    width:70%;
+    height:70%;
+    border-radius:15px;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+.grande-cartao1{
+    background-image:url("img/Maquina1des.jpeg");
+}
+
+.grande-cartao2{
+    background-image:url("img/Maquinq2desm.jpg");
+}
+
+.grande-cartao3{
+    background-image:url("img/Maquinq3desm.jpg");
+}
+
+.grande-cartao4{
+    background-image:url("img/Maquina4.jpg");
+}
+
+.grande-cartao5{
+    background-image:url("img/Brinc1desm.jpg");
+}
+
+.grande-cartao6{
+    background-image:url("img/Carrodesm.jpeg");
+}
+
+.grande-cartao7{
+    background-image:url("img/Bonecodesm.jpeg");
+}
+
+.grande-cartao8{
+    background-image:url("img/Maquina1.jpeg");
+}
+
+.grande-cartao9{
+    background-image:url("img/Maquina1.jpeg");
+}
+
+.grande-cartao10{
+    background-image:url("img/Maquina1.jpeg");
+}
+
+.grande-cartao11{
+    background-image:url("img/Maquina1.jpeg");
+}
+
+.grande-cartao12{
+    background-image:url("img/Maquina1.jpeg");
+}
+
+.grande-cartao13{
+    background-image:url("img/Tecldesm.jpg");
+}
+
+.grande-cartao14{
+    background-image:url("img/Comaps4.jpeg");
+}
+
+.grande-cartao15{
+    background-image:url("img/Ratodesm.jpeg");
+}
+
+.grande-cartao16{
+    background-image:url("img/Fonesdesm.jpg");
+}
+
+
+.voltar{
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:60px;
+    height:60px;
+    background:#1e293b;
+    color:white;
+    border-radius:50%;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    z-index:999;
+}
+
+.seta-voltar{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:70px;
+    height:70px;
+    background:#2563eb;
+    color:white;
+    border-radius:50%;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    z-index:999;
+}

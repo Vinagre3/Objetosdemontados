@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos desmontados</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <a href="casa.html" class="seta-voltar">
+        ←
+    </a>
+
+    <a href="home.html" class="voltar">
+        ←
+    </a>
+
+    <div class="menu">
+        <button onclick="abrirCategoria('eletronica')">
+            Eletrónica
+        </button>
+
+        <button onclick="abrirCategoria('barbear')">
+            Máquinas de Barbear
+        </button>
+
+        <button onclick="abrirCategoria('brinquedos')">
+            Brinquedos
+        </button>
+
+        <button onclick="abrirCategoria('outros')">
+            Outros Objetos
+        </button>
+    </div>
+
+    <section id="eletronica" class="categoria ativa">
+        <div class="cartoes">
+
+            <div class="cartao cartao13"
+            onclick="abrirModal('Teclado', 13)">
+            </div>
+
+            <div class="cartao cartao14"
+            onclick="abrirModal('Comando PS4', 14)">
+            </div>
+
+            <div class="cartao cartao15"
+            onclick="abrirModal('Rato', 15)">
+            </div>
+
+            <div class="cartao cartao16"
+            onclick="abrirModal('Fones', 16)">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="barbear" class="categoria">
+        <div class="cartoes">
+
+            <div class="cartao cartao1"
+            onclick="abrirModal('Máquina 1', 1)">
+            </div>
+
+            <div class="cartao cartao2"
+            onclick="abrirModal('Máquina 2', 2)">
+            </div>
+
+            <div class="cartao cartao3"
+            onclick="abrirModal('Máquina 3', 3)">
+            </div>
+
+            <div class="cartao cartao4"
+            onclick="abrirModal('Máquina 4', 4)">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="brinquedos" class="categoria">
+        <div class="cartoes">
+
+            <div class="cartao cartao5"
+            onclick="abrirModal('LEGO', 5)">
+            </div>
+
+            <div class="cartao cartao6"
+            onclick="abrirModal('Cesto', 6)">
+            </div>
+
+            <div class="cartao cartao7"
+            onclick="abrirModal('Carro LEGO', 7)">
+            </div>
+
+            <div class="cartao cartao8"
+            onclick="abrirModal('Peluche', 8)">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="outros" class="categoria">
+        <div class="cartoes">
+
+            <div class="cartao cartao9"
+            onclick="abrirModal('Relógio Smart', 9)">
+            </div>
+
+            <div class="cartao cartao10"
+            onclick="abrirModal('Fones', 10)">
+            </div>
+
+            <div class="cartao cartao11"
+            onclick="abrirModal('Mochila', 11)">
+            </div>
+
+            <div class="cartao cartao12"
+            onclick="abrirModal('LED', 12)">
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="fechar"
+            onclick="fecharModal()">
+            ✖
+            </span>
+
+            <h1 id="tituloProduto"></h1>
+
+            <div class="grande-cartao grande-cartao1"></div>
+            <div class="grande-cartao grande-cartao2"></div>
+            <div class="grande-cartao grande-cartao3"></div>
+            <div class="grande-cartao grande-cartao4"></div>
+            <div class="grande-cartao grande-cartao5"></div>
+            <div class="grande-cartao grande-cartao6"></div>
+            <div class="grande-cartao grande-cartao7"></div>
+            <div class="grande-cartao grande-cartao8"></div>
+            <div class="grande-cartao grande-cartao9"></div>
+            <div class="grande-cartao grande-cartao10"></div>
+            <div class="grande-cartao grande-cartao11"></div>
+            <div class="grande-cartao grande-cartao12"></div>
+            <div class="grande-cartao grande-cartao13"></div>
+            <div class="grande-cartao grande-cartao14"></div>
+            <div class="grande-cartao grande-cartao15"></div>
+            <div class="grande-cartao grande-cartao16"></div>
+
+        </div>
+    </div>
+
+    <script src="Home.js"></script>
+
+</body>
+</html>
