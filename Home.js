@@ -14,16 +14,13 @@ function abrirCategoria(categoria){
 
 function abrirModal(nome, numero){
 
-
     document
     .getElementById("modal")
     .style.display = "flex";
 
-
     document
     .getElementById("tituloProduto")
     .innerText = nome;
-
 
     let cartoesGrandes =
     document.querySelectorAll(".grande-cartao");
@@ -31,7 +28,6 @@ function abrirModal(nome, numero){
     cartoesGrandes.forEach(cartao => {
         cartao.style.display = "none";
     });
-
 
     document
     .querySelector(".grande-cartao" + numero)
@@ -44,7 +40,6 @@ function fecharModal(){
     .getElementById("modal")
     .style.display = "none";
 
-
     let cartoesGrandes =
     document.querySelectorAll(".grande-cartao");
 
@@ -52,7 +47,6 @@ function fecharModal(){
         cartao.style.display = "none";
     });
 }
-
 
 window.onclick = function(event){
 
@@ -62,4 +56,8 @@ window.onclick = function(event){
     if(event.target == modal){
         fecharModal();
     }
+}
+
+function voltarPagina() {
+    window.history.back();
 }
